@@ -16,12 +16,14 @@
     <string name="splash_authors">Powered by Ning and Colin</string>
 
     <!-- Main and About us Strings -->
-    <string name="main_instruction">The INTERVAL defines the frequency of automatic dropping of tracker, however it still have to meet one condition of the minimal distance moved defined in DISTANCE</string>
+    <string name="main_instruction">INTERVAL: frequency of dropped trackers. \nDISTANCE: Condition of minimal distance moved.</string>
     <string name="main_interval">Interval / Seconds</string>
     <string name="main_distance">Distance / Meters</string>
     <string name="main_start">Start Tracking</string>
-    <string name="main_ning">Liu Ning</string>
-    <string name="main_colin">Colin Jaeger</string>
+    <string name="main_ning">Ning Liu</string>
+    <string name="main_ning_data">Ning is a bla bla </string>
+    <string name="main_colin">Colin Jäger</string>
+    <string name="main_colin_data">Colin is a bla bla</string>
     <string name="main_contact">Contact Us</string>
 
     <!-- Track Strings -->

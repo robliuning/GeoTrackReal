@@ -2,20 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main" >
+    android:background="@drawable/mainfragmentlogo" >
 
     <LinearLayout
-        android:id="@+id/ll_main"
+        android:id="@+id/ll_bmain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="40dp" >
+        android:padding="20dp" >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.21"
             android:text="@string/main_instruction"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -39,42 +41,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeLayout1"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/ll_bmain"
+        android:layout_marginTop="18dp"
         android:orientation="vertical"
-        android:padding="30dp" >
+        android:padding="70dp" >
 
         <TextView
             android:id="@+id/tmp_interval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="@string/main_interval"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/et_interval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textColorLink="@color/green" >
-
-            <requestFocus />
-        </EditText>
+            android:textColor="@color/yellow"
+            android:textColorLink="@color/green" />
 
         <TextView
+            android:id="@+id/tmp_distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="@string/main_distance"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/et_distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:textColor="@color/yellow"
             android:textColorLink="@color/green" />
-
     </LinearLayout>
 
 </RelativeLayout>
