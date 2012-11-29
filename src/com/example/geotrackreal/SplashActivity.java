@@ -54,6 +54,7 @@ public class SplashActivity extends Activity {
 		//Check if location services are enabled when application is first started or application is back from pause. (User go to setting screen)
 		gpsEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 		networkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+		
 		//Show alert dialog when user have gps and network location services both disabled.
 		if(!gpsEnabled && !networkEnabled){
 			AlertDialog.Builder adb = new AlertDialog.Builder(context);      	  

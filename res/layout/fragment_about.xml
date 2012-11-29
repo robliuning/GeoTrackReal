@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray" >
+    android:background="@drawable/aboutbg" >
 
 
 <LinearLayout
@@ -10,37 +10,42 @@
         android:id="@+id/ll_ning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/tmp_main_ning"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_ning"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom = "40dp"
+        android:paddingRight = "40dp"
+        android:paddingLeft = "40dp">
     
     <TextView
        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="@string/main_ning_data" />
+        android:text="@string/main_ning_data"
+        android:textSize="10sp" />
     
     </LinearLayout>
     
- <FrameLayout
-      android:id="@+id/fl_people"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="40dp"
-      android:layout_below="@id/ll_ning">
+  
+  <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+  
+      
+    <Button
+        android:id="@+id/bt_send_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_contact" />
+    
+    </RelativeLayout>
 
-      <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"
-          android:src="@drawable/people" />
-  </FrameLayout>
+ 
+
+
     
   <LinearLayout
     
@@ -48,42 +53,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/fl_people">
-    
-    <TextView
-        android:id="@+id/tmp_main_colin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_colin"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
-    
+        android:paddingTop="95dp"
+        android:paddingBottom = "40dp"
+        android:paddingRight = "40dp"
+        android:paddingLeft = "40dp"
+        android:layout_below="@id/buttonLayout">
+        
     <TextView 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="@string/main_colin_data"/>
+        android:text="@string/main_colin_data"
+        android:textSize="10sp"/>
     
     </LinearLayout>
-
-  
-  <RelativeLayout
-        android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" >
-  
-      
-    <Button
-        android:id="@+id/bt_send_mail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_contact"
-        android:background="@color/green"
-        android:textColor="@color/white" />
-    
-    </RelativeLayout>
-
- 
-
 </RelativeLayout>

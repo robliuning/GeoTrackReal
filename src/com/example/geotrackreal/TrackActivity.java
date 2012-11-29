@@ -45,6 +45,9 @@ public class TrackActivity extends Activity implements LocationListener{
 	private String stringAddress;
 	private String startTime;
 	private String endTime;
+	
+	//for mock location
+	//private MockGpsProvider mMock = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +61,10 @@ public class TrackActivity extends Activity implements LocationListener{
 		
 		//Initialize values
 		locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-	    criteria = new Criteria();
+	    //for test on real device, enable mock locations
+		
+		
+		criteria = new Criteria();
 	    provider = locationManager.getBestProvider(criteria, false);
 	    trackerList = new ArrayList<Location>();
 	    trackerNumber = 0;
@@ -105,6 +111,7 @@ public class TrackActivity extends Activity implements LocationListener{
 				parcelIntent.putExtra(StaticName.EXTRA_START,startTime);
 				parcelIntent.putExtra(StaticName.EXTRA_END,endTime);	
 				startActivity(parcelIntent);
+				
 			}
 		}
    };

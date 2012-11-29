@@ -17,53 +17,53 @@ public final class R {
         public static final int yellow=0x7f040003;
     }
     public static final class drawable {
-        public static final int bg=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int logo=0x7f020002;
-        public static final int main=0x7f020003;
-        public static final int mainfragmentlogo=0x7f020004;
-        public static final int people=0x7f020005;
-        public static final int splashlogo=0x7f020006;
+        public static final int aboutbg=0x7f020000;
+        public static final int bg=0x7f020001;
+        public static final int button_contact=0x7f020002;
+        public static final int button_start=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int logo=0x7f020005;
+        public static final int main=0x7f020006;
+        public static final int mainfragmentlogo=0x7f020007;
+        public static final int people=0x7f020008;
+        public static final int splashlogo=0x7f020009;
     }
     public static final class id {
         public static final int bt_finish=0x7f090010;
         public static final int bt_manual=0x7f09000f;
-        public static final int bt_send_mail=0x7f090017;
-        public static final int bt_start=0x7f09001a;
-        public static final int buttonLayout=0x7f090016;
-        public static final int et_distance=0x7f09001e;
-        public static final int et_interval=0x7f09001c;
-        public static final int fl_people=0x7f090013;
+        public static final int bt_send_mail=0x7f090013;
+        public static final int bt_start=0x7f090018;
+        public static final int buttonLayout=0x7f090012;
+        public static final int et_distance=0x7f09001c;
+        public static final int et_interval=0x7f09001a;
         public static final int fragment_container=0x7f090005;
         public static final int list_distance=0x7f090001;
-        public static final int list_header=0x7f09001f;
+        public static final int list_header=0x7f09001d;
         public static final int list_interval=0x7f090000;
         public static final int list_time_end=0x7f090003;
         public static final int list_time_start=0x7f090002;
-        public static final int ll_bmain=0x7f090018;
+        public static final int ll_bmain=0x7f090015;
         public static final int ll_colin=0x7f090014;
         public static final int ll_ning=0x7f090011;
-        public static final int main_about=0x7f090024;
-        public static final int main_main=0x7f090023;
+        public static final int main_about=0x7f090022;
+        public static final int main_main=0x7f090021;
         public static final int mapview=0x7f090006;
-        public static final int menu_settings=0x7f090025;
-        public static final int relativeLayout1=0x7f090019;
-        public static final int tmp_distance=0x7f09001d;
-        public static final int tmp_interval=0x7f09001b;
-        public static final int tmp_main_colin=0x7f090015;
-        public static final int tmp_main_ning=0x7f090012;
+        public static final int relativeLayout1=0x7f090017;
+        public static final int tmp_distance=0x7f09001b;
+        public static final int tmp_interval=0x7f090019;
         public static final int tracker_list=0x7f090004;
         public static final int tv_distance=0x7f090008;
+        public static final int tv_instruction=0x7f090016;
         public static final int tv_interval=0x7f090007;
         public static final int tv_last_text=0x7f09000d;
         public static final int tv_last_tracker=0x7f09000e;
         public static final int tv_setup=0x7f09000b;
-        public static final int tv_subtitle=0x7f090022;
+        public static final int tv_subtitle=0x7f090020;
         public static final int tv_time_now=0x7f09000a;
         public static final int tv_time_start=0x7f090009;
-        public static final int tv_title=0x7f090021;
+        public static final int tv_title=0x7f09001f;
         public static final int tv_tracker_number=0x7f09000c;
-        public static final int tv_type=0x7f090020;
+        public static final int tv_type=0x7f09001e;
     }
     public static final class integer {
         public static final int track_distance=0x7f050001;
@@ -82,7 +82,6 @@ public final class R {
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
-        public static final int activity_splash=0x7f080001;
     }
     public static final class string {
         /**  Address Manager Strings 

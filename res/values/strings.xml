@@ -16,10 +16,10 @@
     <string name="splash_authors">Powered by Ning and Colin</string>
 
     <!-- Main and About us Strings -->
-    <string name="main_instruction">INTERVAL: frequency of dropped trackers. \nDISTANCE: Condition of minimal distance moved.</string>
-    <string name="main_interval">Interval / Seconds</string>
-    <string name="main_distance">Distance / Meters</string>
-    <string name="main_start">Start Tracking</string>
+    <string name="main_instruction">INTERVAL\n frequency of dropped trackers. \n\nDISTANCE \nCondition of minimal distance moved.</string>
+    <string name="main_interval">INTERVAL / SECONDS</string>
+    <string name="main_distance">DISTANCE / METERS</string>
+    <string name="main_start">START TRACKING</string>
     <string name="main_ning">Ning Liu</string>
     <string name="main_ning_data">Ning is a bla bla </string>
     <string name="main_colin">Colin Jäger</string>

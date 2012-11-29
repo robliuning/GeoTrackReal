@@ -19,6 +19,7 @@ public class FragmentMain extends Fragment {
 	private EditText et_distance;
 	private TextView tmp_interval;
 	private TextView tmp_distance;
+	private TextView tv_instruction;
 	private Button bt_start;
 	private int interval;
 	private int distance;
@@ -33,7 +34,7 @@ public class FragmentMain extends Fragment {
 		
 		et_interval = (EditText)view.findViewById(R.id.et_interval);
 		et_distance = (EditText)view.findViewById(R.id.et_distance);
-		
+		tv_instruction = (TextView)view.findViewById(R.id.tv_instruction);
 		bt_start = (Button)view.findViewById(R.id.bt_start);
 		tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/impact.ttf");
 		bt_start.setTypeface(tf);
@@ -42,9 +43,12 @@ public class FragmentMain extends Fragment {
 		tmp_distance = (TextView)view.findViewById(R.id.tmp_distance);
 		tmp_distance.setTypeface(tf);
 		
-		
 		bt_start.setTypeface(tf);
 		bt_start.setOnClickListener(btStart);
+		
+		tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/caviar.ttf");
+		tv_instruction.setTypeface(tf);
+
 		
 		return view;
 	}

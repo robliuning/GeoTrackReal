@@ -12,12 +12,14 @@
         android:padding="20dp" >
 
         <TextView
+            android:id="@+id/tv_instruction"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.21"
+            android:gravity="center"
             android:text="@string/main_instruction"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -25,16 +27,16 @@
         android:id="@+id/relativeLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" >
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp">
 
         <Button
             android:id="@+id/bt_start"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/green"
-            android:text="@string/main_start"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:background="@drawable/button_start"
+            android:textColorHint="@color/white"/>
 
     </RelativeLayout>
 
@@ -43,9 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/ll_bmain"
-        android:layout_marginTop="18dp"
         android:orientation="vertical"
-        android:padding="70dp" >
+        android:padding="60dp" >
 
         <TextView
             android:id="@+id/tmp_interval"
