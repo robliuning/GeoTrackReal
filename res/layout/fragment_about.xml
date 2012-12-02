@@ -2,38 +2,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/aboutbg" >
+    android:background="@drawable/bg_about" >
 
 
-<LinearLayout
-    
+	<LinearLayout    
         android:id="@+id/ll_ning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="30dp"
-        android:paddingBottom = "40dp"
-        android:paddingRight = "40dp"
-        android:paddingLeft = "40dp">
-    
-    <TextView
-       android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="@string/main_ning_data"
-        android:textSize="10sp" />
-    
+        android:layout_marginTop="150dp"
+        android:padding = "50dp">
+      	<com.example.geotrackreal.customfont.CustomTextView 
+        	android:layout_width="match_parent"
+        	android:layout_height="80dp"
+        	android:textColor="@color/white"
+        	android:text="@string/main_colin_data"
+       	 	android:textSize="10sp"/> 
+    	<com.example.geotrackreal.customfont.CustomTextView
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/white"
+        	android:text="@string/main_ning_data"
+        	android:textSize="10sp" />
     </LinearLayout>
     
-  
-  <RelativeLayout
+    <RelativeLayout
         android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
-  
+      	style="@style/bottom_position" >
       
     <Button
         android:id="@+id/bt_send_mail"
@@ -42,29 +37,4 @@
         android:background="@drawable/button_contact" />
     
     </RelativeLayout>
-
- 
-
-
-    
-  <LinearLayout
-    
-        android:id="@+id/ll_colin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="95dp"
-        android:paddingBottom = "40dp"
-        android:paddingRight = "40dp"
-        android:paddingLeft = "40dp"
-        android:layout_below="@id/buttonLayout">
-        
-    <TextView 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="@string/main_colin_data"
-        android:textSize="10sp"/>
-    
-    </LinearLayout>
 </RelativeLayout>

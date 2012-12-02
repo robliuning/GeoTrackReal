@@ -1,7 +1,6 @@
 package com.example.geotrackreal;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,22 +9,17 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class FragmentMain extends Fragment {
 	//Local variables
 	private EditText et_interval;
 	private EditText et_distance;
-	private TextView tmp_interval;
-	private TextView tmp_distance;
-	private TextView tv_instruction;
 	private Button bt_start;
 	private int interval;
 	private int distance;
 	// identifier weather user inputs are qualified
 	private boolean ready = true;
-	private Typeface tf;
 
 	
 	public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState){
@@ -34,22 +28,9 @@ public class FragmentMain extends Fragment {
 		
 		et_interval = (EditText)view.findViewById(R.id.et_interval);
 		et_distance = (EditText)view.findViewById(R.id.et_distance);
-		tv_instruction = (TextView)view.findViewById(R.id.tv_instruction);
 		bt_start = (Button)view.findViewById(R.id.bt_start);
-		tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/impact.ttf");
-		bt_start.setTypeface(tf);
-		tmp_interval = (TextView)view.findViewById(R.id.tmp_interval);
-		tmp_interval.setTypeface(tf);
-		tmp_distance = (TextView)view.findViewById(R.id.tmp_distance);
-		tmp_distance.setTypeface(tf);
-		
-		bt_start.setTypeface(tf);
 		bt_start.setOnClickListener(btStart);
-		
-		tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/caviar.ttf");
-		tv_instruction.setTypeface(tf);
-
-		
+	
 		return view;
 	}
 	

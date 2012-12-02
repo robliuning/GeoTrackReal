@@ -3,6 +3,7 @@
 
     <!-- Global Strings -->
     <string name="app_name">GeoTrack</string>
+	<string name="title">Title Image</string>
     <string name="title_activity_main">Geo Track</string>
     <string name="title_activity_locationlist">Trackers</string>
     <string name="title_activity_track">Tracking in Progress</string>
@@ -21,9 +22,9 @@
     <string name="main_distance">DISTANCE / METERS</string>
     <string name="main_start">START TRACKING</string>
     <string name="main_ning">Ning Liu</string>
-    <string name="main_ning_data">Ning is a bla bla </string>
+    <string name="main_ning_data">Ning Liu,29 years old and comes from China, is currently taking his second year study of a matster degree in Mobile Technology and Business at University of Jyväskylä. He also work as freelancer web designer in free time.</string>
     <string name="main_colin">Colin Jäger</string>
-    <string name="main_colin_data">Colin is a bla bla</string>
+    <string name="main_colin_data">Colin Jäger,2x years old and comes from xxxx, is currently taking his second year study of a xxx degree in Information Technology and Business at University of Jyväskylä.</string>
     <string name="main_contact">Contact Us</string>
 
     <!-- Track Strings -->
