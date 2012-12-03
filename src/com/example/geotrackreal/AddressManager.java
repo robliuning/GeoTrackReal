@@ -31,7 +31,7 @@ public class AddressManager {
 		        geo = new Geocoder(context,Locale.getDefault());
 		        addresses = geo.getFromLocation(location.getLatitude(),location.getLongitude(), 1);
 				 if(addresses.isEmpty()){
-			        	stringAddress =context.getString(R.string.address_no_match) + "Latitude: "+ location.getLatitude() + "&Longitude: "+location.getLongitude();
+			        	stringAddress = "Latitude: "+ location.getLatitude() + "and Longitude: "+location.getLongitude();
 			        }else{
 			        	if(addresses.size() > 0){
 			        		stringAddress = addresses.get(0).getAddressLine(0) +", "+addresses.get(0).getAddressLine(1)+", "+addresses.get(0).getAddressLine(2);

@@ -5,30 +5,51 @@
     android:background="@drawable/bg" >
 
     <LinearLayout
-        android:id="@+id/ll_bmain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp" >
+        android:id="@+id/uppercontent"
+        style="@style/uppercontent_wrapper"
+        android:orientation="vertical" >
+        <LinearLayout
+            style="@style/uppercontent_line">
+            
+			<com.example.geotrackreal.customfont.CustomTitleView
+			    style="@style/upper_normal"
+			    android:layout_weight="1"
+			    android:text="@string/track_interval" />
 
-        <com.example.geotrackreal.customfont.CustomTextView
-            android:id="@+id/tv_instruction"
-            style="@style/upper_content"
-            android:gravity="center"
-            android:text="@string/main_instruction"
-            android:textSize="13sp" />
-        
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    style="@style/upper_highlight"
+      		    android:layout_weight="3"
+      		    android:text="@string/des_interval" />    
+        </LinearLayout>
 		<ImageView
-		    style="@style/title_postion"
+			style="@style/img_gap" />
+        <LinearLayout
+            style="@style/uppercontent_line">
+			<com.example.geotrackreal.customfont.CustomTitleView
+			    style="@style/upper_normal"
+			    android:layout_weight="1"
+			    android:text="@string/track_distance" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    style="@style/upper_highlight"
+      		    android:layout_weight="3"
+      		    android:text="@string/des_instance" />
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_below="@id/uppercontent"
+	    style="@style/title_position"
+	    android:id="@+id/title">
+	    <ImageView
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
        		android:contentDescription="@string/title"
             android:background="@drawable/title_ins"/>
-		
-    </LinearLayout>
-
+	</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ll_bmain"
+        android:layout_below="@id/title"
         android:orientation="vertical"
         android:gravity="center"
         android:padding="20dp" >
@@ -50,7 +71,6 @@
             android:gravity="center"
             android:textColor="@color/yellow"
             android:textColorLink="@color/green" />
-
         <com.example.geotrackreal.customfont.CustomTitleView
             android:id="@+id/tmp_distance"
             style="@style/font_header1"

@@ -7,6 +7,7 @@
     <string name="title_activity_main">Geo Track</string>
     <string name="title_activity_locationlist">Trackers</string>
     <string name="title_activity_track">Tracking in Progress</string>
+    <string name="title_activity_mymap">Mymap</string>
 
     <!-- Menu Strings -->
     <string name="menu_settings">Settings</string>
@@ -17,7 +18,8 @@
     <string name="splash_authors">Powered by Ning and Colin</string>
 
     <!-- Main and About us Strings -->
-    <string name="main_instruction">INTERVAL\n frequency of dropped trackers. \n\nDISTANCE \nCondition of minimal distance moved.</string>
+    <string name="des_interval">Frequency of dropped trackers</string>
+    <string name="des_instance">Condition of minimal distance moved</string>
     <string name="main_interval">INTERVAL / SECONDS</string>
     <string name="main_distance">DISTANCE / METERS</string>
     <string name="main_start">START TRACKING</string>
@@ -28,17 +30,19 @@
     <string name="main_contact">Contact Us</string>
 
     <!-- Track Strings -->
-    <string name="track_interval">Interval :</string>
-    <string name="track_distance">Distance: </string>
-    <string name="track_start">Track start: </string>
-    <string name="track_now">Current time: </string>
-    <string name="track_tracker">Trackers</string>
-    <string name="track_last_tracker">Your last tracker was dropped at</string>
-    <string name="track_setup">You have dropped:</string>
+    <string name="track_interval">INTERVAL</string>
+    <string name="track_distance">DISTANCE</string>
+    <string name="track_start">START</string>
+    <string name="track_provider">PROVIDER</string>
+    <string name="tmp_interval"></string>
+    <string name="tmp_distance"></string>
+    <string name="tmp_start"> - </string>
+    <string name="tmp_provider"> - </string>
+    <string name="track_last_tracker">LAST KNOWN LOCATION</string>
+    <string name="track_setup">TRACKER NUMBER</string>
     <string name="track_number_default">0</string>
-    <string name="track_last_default">No available Location</string>
-    <string name="track_manual">Drop a Tracker</string>
-    <string name="track_finish">Finish</string>
+    <string name="track_last_default_time"> - </string>
+    <string name="track_last_default_location">NO TRACKER DROPPED</string>
 
     <!-- Address Manager Strings -->
     <string name="address_no_match">Can not locate an address for: </string>
@@ -48,7 +52,7 @@
     <string name="error_interval">The value of interval can not exceed 100 seconds</string>
     <string name="error_distance">The value of distance can not exceed 1000 meters </string>
     <string name="error_empty">All fields are required to be filled</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_mymap">Mymap</string>
-
+    <string name="error_empty_tracker">At least one tracker is needed to complete tracking.</string>
+    <string name="error_number_exceed">I can not believe you made 100 trackers, we are sorry you can not add anymore! </string>
+    <string name="error_mail_empty">Write something before send !</string>
 </resources>

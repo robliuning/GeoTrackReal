@@ -3,63 +3,116 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation = "vertical"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg_track"
     tools:context=".TrackActivity" >
     
-    <RelativeLayout
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content">
-    		<TextView
-    			android:id="@+id/tv_interval"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content" />
-    		<TextView
-    			android:id="@+id/tv_distance"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_toRightOf="@id/tv_interval" />
-    		<TextView
-    			android:id="@+id/tv_time_start"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@id/tv_interval" />
-	</RelativeLayout>
-	
-	<RelativeLayout
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content">
-    		<TextView
-    			android:id="@+id/tv_setup"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/track_setup" />	
-		        	        
-    		<TextView
+	<LinearLayout
+	    android:id="@+id/uppercontent"
+	    style="@style/uppercontent_wrapper"
+	    android:orientation="vertical" >
+        <LinearLayout
+            style="@style/uppercontent_line">
+			<com.example.geotrackreal.customfont.CustomTitleView
+			    style="@style/upper_normal"
+			    android:layout_weight="1"
+			    android:text="@string/track_interval" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    android:id="@+id/tv_interval"
+      		    style="@style/upper_highlight"
+      		    android:layout_weight="1"
+      		    android:text="@string/tmp_interval" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+           		style="@style/upper_normal"
+           		android:layout_weight="1"
+            	android:text="@string/track_distance" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    android:id="@+id/tv_distance"
+      		    style="@style/upper_highlight"
+      		  	android:layout_weight="1"
+      		    android:text="@string/tmp_distance" />
+       	</LinearLayout>
+		<ImageView
+			style="@style/img_gap" />
+        <LinearLayout
+            style="@style/uppercontent_line">
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	style="@style/upper_normal"
+            	android:layout_weight="1"
+            	android:text="@string/track_start" />
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	android:id="@+id/tv_start"
+            	style="@style/upper_highlight"
+            	android:layout_weight="1"
+            	android:text="@string/tmp_start"/>
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	style="@style/upper_normal"
+            	android:layout_weight="1"
+            	android:text="@string/track_provider" />
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	android:id="@+id/tv_provider"
+            	style="@style/upper_highlight"
+            	android:layout_weight="1"
+            	android:text="@string/tmp_provider" />
+      	</LinearLayout>  
+      	<ImageView
+			style="@style/img_gap" />
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_below="@id/uppercontent"
+	    style="@style/title_position"
+	    android:id="@+id/title">
+	    <ImageView
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+       		android:contentDescription="@string/title"
+            android:background="@drawable/title_track"/>
+	</LinearLayout>
+    
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="15dp"
+	    android:padding="10dp"
+	  	android:layout_below="@id/title">
+	       <com.example.geotrackreal.customfont.CustomTitleView
+		        style="@style/center_normal"
+		        android:text="@string/track_setup" />	      	        
+    		<com.example.geotrackreal.customfont.CustomTitleView
     			android:id="@+id/tv_tracker_number"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/track_number_default"
-		        android:layout_below="@id/tv_setup" />
-		        
-    		<TextView
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/track_tracker"
-		        android:layout_toRightOf="@id/tv_tracker_number"
-		        android:layout_below="@id/tv_setup"/>
-    		<TextView
-    			android:id="@+id/tv_last_text"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/track_last_tracker"
-		        android:layout_below="@id/tv_tracker_number" />	
-    		<TextView
-    			android:id="@+id/tv_last_tracker"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/track_last_default"
-		        android:layout_below="@id/tv_last_text" />	        
-	</RelativeLayout>
+		        style="@style/center_tracker"
+		        android:text="@string/track_number_default" />
+	        <com.example.geotrackreal.customfont.CustomTitleView
+		        style="@style/center_normal"
+		        android:text="@string/track_last_tracker" />
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:paddingTop="5dp"
+	            android:paddingBottom="5dp"
+	            android:weightSum="3"
+	            android:gravity="center">
+	         	<com.example.geotrackreal.customfont.CustomTitleView
+	         	    style="@style/center_highlight"
+	         	    android:layout_weight="1"
+	         	    android:textSize="19sp"
+    				android:id="@+id/tv_last_tracker_time"
+		        	android:text="@string/track_last_default_time" />
+	         	<com.example.geotrackreal.customfont.CustomTitleView
+	         	 	style="@style/center_highlight"  	
+	         	 	android:layout_weight="2"      
+	         		android:textSize="14sp"   		    	           
+    				android:id="@+id/tv_last_tracker_location"
+		        	android:text="@string/track_last_default_location" />	   
+	        </LinearLayout>		 
+		<ImageView
+			style="@style/img_gap" />   
+	</LinearLayout>
 	
 	<LinearLayout
 		style="@style/bottom_position"
@@ -68,14 +121,13 @@
 			android:id="@+id/bt_manual"
 			android:layout_height="wrap_content"
 			android:layout_width="wrap_content"
-			android:text="@string/track_manual"
-			/>
+			android:background="@drawable/button_manual"/>
 		<Button 
 			android:id="@+id/bt_finish"
 			android:layout_height="wrap_content"
 			android:layout_width="wrap_content"
-			android:text="@string/track_finish"
-			/>
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/button_finish"/>
 	</LinearLayout>
 	
 </RelativeLayout>

@@ -1,20 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/bg_about" >
 
 
-	<LinearLayout    
-        android:id="@+id/ll_ning"
+	<LinearLayout   
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="150dp"
-        android:padding = "50dp">
+        android:paddingLeft="50dp"
+       	android:paddingRight="50dp"
+       	android:paddingTop="10dp"
+       	android:paddingBottom="10dp">
       	<com.example.geotrackreal.customfont.CustomTextView 
         	android:layout_width="match_parent"
-        	android:layout_height="80dp"
+        	android:layout_height="60dp"
         	android:textColor="@color/white"
         	android:text="@string/main_colin_data"
        	 	android:textSize="10sp"/> 
@@ -25,7 +28,26 @@
         	android:text="@string/main_ning_data"
         	android:textSize="10sp" />
     </LinearLayout>
-    
+    <RelativeLayout
+            android:layout_height="wrap_content"
+        	android:layout_width="match_parent" 
+        	android:paddingLeft="20dp"
+        	android:paddingRight="20dp"
+        	android:paddingTop="5dp"
+        	android:paddingBottom="5dp" >
+        <EditText
+            android:id="@+id/mail_content"
+       		android:layout_height="wrap_content"
+        	android:layout_width="match_parent"    
+        	android:textColor="@color/white"
+        	android:textSize="10sp"     
+			android:lines="7" 
+			android:gravity="top|left" 
+			android:inputType="textMultiLine"
+			android:scrollHorizontally="false"
+			android:padding="10dp"
+			android:background="@drawable/textarea" />
+    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/buttonLayout"
       	style="@style/bottom_position" >
@@ -37,4 +59,4 @@
         android:background="@drawable/button_contact" />
     
     </RelativeLayout>
-</RelativeLayout>
+</LinearLayout>
