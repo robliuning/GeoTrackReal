@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:orientation = "vertical"
     android:background="@drawable/bg_track"
-    tools:context=".TrackActivity" >
-    
+    tools:context=".TrackActivity" >  
 	<LinearLayout
 	    android:id="@+id/uppercontent"
 	    style="@style/uppercontent_wrapper"
@@ -35,7 +34,8 @@
       		    android:text="@string/tmp_distance" />
        	</LinearLayout>
 		<ImageView
-			style="@style/img_gap" />
+			style="@style/img_gap" 
+			android:contentDescription="@string/title" />
         <LinearLayout
             style="@style/uppercontent_line">
       		<com.example.geotrackreal.customfont.CustomTitleView
@@ -58,7 +58,8 @@
             	android:text="@string/tmp_provider" />
       	</LinearLayout>  
       	<ImageView
-			style="@style/img_gap" />
+			style="@style/img_gap"
+			android:contentDescription="@string/title" />
     </LinearLayout>
 	<LinearLayout
 	    android:layout_below="@id/uppercontent"
@@ -69,8 +70,7 @@
 	        android:layout_width="wrap_content"
        		android:contentDescription="@string/title"
             android:background="@drawable/title_track"/>
-	</LinearLayout>
-    
+	</LinearLayout>   
 	<LinearLayout
 	    android:orientation="vertical"
 	    android:layout_height="wrap_content"
@@ -111,9 +111,9 @@
 		        	android:text="@string/track_last_default_location" />	   
 	        </LinearLayout>		 
 		<ImageView
-			style="@style/img_gap" />   
-	</LinearLayout>
-	
+			style="@style/img_gap"
+			android:contentDescription="@string/title" />
+	</LinearLayout>	
 	<LinearLayout
 		style="@style/bottom_position"
 		android:orientation="horizontal">
@@ -129,5 +129,4 @@
 			android:layout_marginLeft="5dp"
 			android:background="@drawable/button_finish"/>
 	</LinearLayout>
-	
 </RelativeLayout>

@@ -2,15 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >   
+    android:orientation="horizontal"
+    android:weightSum="1" >   
     <TextView
     	android:id="@+id/list_header"
-    	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:gravity="center_vertical"
-    	android:textStyle="bold"
-    	android:textSize="22sp"
-    	android:textColor="#FFFFFF"
-    	android:padding="10dp"
-    	android:background="#336699" />
+    	style="@style/center_highlight"
+    	android:layout_weight="1"
+    	android:text="@string/list_header" />
 </LinearLayout>

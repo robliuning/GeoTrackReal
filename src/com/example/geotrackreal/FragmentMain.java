@@ -30,7 +30,6 @@ public class FragmentMain extends Fragment {
 		et_distance = (EditText)view.findViewById(R.id.et_distance);
 		bt_start = (Button)view.findViewById(R.id.bt_start);
 		bt_start.setOnClickListener(btStart);
-	
 		return view;
 	}
 	

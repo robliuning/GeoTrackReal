@@ -1,40 +1,83 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context=".Locationlist" >
-   <RelativeLayout
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content">
-    		<TextView
-    			android:id="@+id/list_interval"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content" />
-    		<TextView
-    			android:id="@+id/list_distance"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_toRightOf="@id/list_interval" />
-    		<TextView
-    			android:id="@+id/list_time_start"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@id/list_interval" />	
-    		<TextView
-    			android:id="@+id/list_time_end"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_toRightOf="@id/list_time_start"
-		      	android:layout_below="@id/list_interval" />	    
-	</RelativeLayout>    
+	<LinearLayout
+	    android:id="@+id/uppercontent"
+	    style="@style/uppercontent_wrapper"
+	    android:orientation="vertical" >
+        <LinearLayout
+            style="@style/uppercontent_line">
+			<com.example.geotrackreal.customfont.CustomTitleView
+			    style="@style/upper_normal"
+			    android:layout_weight="1"
+			    android:text="@string/track_interval" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    android:id="@+id/tv_interval"
+      		    style="@style/upper_highlight"
+      		    android:layout_weight="1"
+      		    android:text="@string/tmp_interval" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+           		style="@style/upper_normal"
+           		android:layout_weight="1"
+            	android:text="@string/track_distance" />
+
+      		<com.example.geotrackreal.customfont.CustomTitleView
+      		    android:id="@+id/tv_distance"
+      		    style="@style/upper_highlight"
+      		  	android:layout_weight="1"
+      		    android:text="@string/tmp_distance" />
+       	</LinearLayout>
+		<ImageView
+			style="@style/img_gap" 
+			android:contentDescription="@string/title" />
+        <LinearLayout
+            style="@style/uppercontent_line">
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	style="@style/upper_normal"
+            	android:layout_weight="1"
+            	android:text="@string/track_start" />
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	android:id="@+id/tv_start"
+            	style="@style/upper_highlight"
+            	android:layout_weight="1"
+            	android:text="@string/tmp_start"/>
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	style="@style/upper_normal"
+            	android:layout_weight="1"
+            	android:text="@string/track_end" />
+      		<com.example.geotrackreal.customfont.CustomTitleView
+            	android:id="@+id/tv_end"
+            	style="@style/upper_highlight"
+            	android:layout_weight="1"
+            	android:text="@string/tmp_end" />
+      	</LinearLayout>  
+      	<ImageView
+			style="@style/img_gap" 
+			android:contentDescription="@string/title" />
+    </LinearLayout>
+	<LinearLayout
+	    style="@style/title_position"
+	    android:id="@+id/title">
+
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/title_result"
+		    android:contentDescription="@string/title" />
+	</LinearLayout> 
 	<FrameLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+		android:layout_height="wrap_content">
 		<ListView
 			android:id="@+id/tracker_list"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
 		</ListView>
-	</FrameLayout>
-    
-</RelativeLayout>
+	</FrameLayout>   
+</LinearLayout>

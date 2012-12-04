@@ -33,6 +33,7 @@ public class FragmentAbout extends Fragment {
 		@Override
 		public void onClick(View v) {
 			content = mail_content.getText().toString().trim();
+			//If content is not empty, send the mail
 			if(content.length()!=0){
 				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 				String[] recipients = new String[]{"robliuning@gmail.com", "colinjaeger@gmail.com"};

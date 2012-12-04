@@ -114,8 +114,8 @@ public class TrackActivity extends Activity implements LocationListener{
 				endTime = getCustomTime();
 				Intent parcelIntent = new Intent(TrackActivity.this,Locationlist.class);
 				parcelIntent.putParcelableArrayListExtra(StaticName.EXTRA_TRACKERS, trackerList);
-				parcelIntent.putExtra(StaticName.EXTRA_DISTANCE, distance);
-				parcelIntent.putExtra(StaticName.EXTRA_INTERVAL, interval);
+				parcelIntent.putExtra(StaticName.EXTRA_DISTANCE, Integer.toString(distance));
+				parcelIntent.putExtra(StaticName.EXTRA_INTERVAL, Integer.toString(interval));
 				parcelIntent.putExtra(StaticName.EXTRA_START,startTime);
 				parcelIntent.putExtra(StaticName.EXTRA_END,endTime);	
 				startActivity(parcelIntent);	

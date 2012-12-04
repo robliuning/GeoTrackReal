@@ -12,6 +12,7 @@ public class AlertDialogManager {
 	 * @param message alert message
 	 */
 	public void showAlertDialog(Context context,String title,String message){
+		//This class is defined to facilitate the use of alertDialog
 		AlertDialog.Builder adb = new AlertDialog.Builder(context);
 		adb.setTitle(title)
 			.setMessage(message)

@@ -51,7 +51,7 @@ public class SplashActivity extends Activity {
 	@Override
 	protected void onResume(){
 		super.onResume();
-		//Check if location services are enabled when application is first started or application is back from pause. (User go to setting screen)
+		//Check if location services are enabled when application is first started or application is back from pause. (User go to setting screen and come back)
 		gpsEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 		networkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 		

@@ -1,6 +1,7 @@
 package com.example.geotrackreal;
 
 public class StaticName {
+	//A global static class that used to save key words
 	public final static String EXTRA_RECTYPE = "RECTYPE";
 	public final static String EXTRA_RECDATE = "RECDATE";
 	public final static String EXTRA_ADDRESS = "ADDRESS";

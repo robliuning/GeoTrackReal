@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 public class CustomTitleView extends TextView {
+	//Enable the use customized font
 
     public CustomTitleView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

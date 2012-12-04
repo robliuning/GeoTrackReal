@@ -18,11 +18,11 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		//FragmentMain will be displayed by default
 		FragmentMain fragmentMain = new FragmentMain();
 		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,fragmentMain).commit();
+		//Use the currentFrag to identify if user chose to navigate to a fragment that he/she has already in.
 		currentFrag = R.id.main_main;
-
 	}
 	
 	@Override
@@ -36,6 +36,7 @@ public class MainActivity extends FragmentActivity {
 		selectFrag = item.getItemId();
 		if(selectFrag != currentFrag){
 			currentFrag = selectFrag;
+			//If user chose a fragment other then the one he/she already in, start the transaction
 			fragmentChange(selectFrag);
 			}
 		return true;
@@ -45,6 +46,7 @@ public class MainActivity extends FragmentActivity {
 		transaction = getSupportFragmentManager().beginTransaction();
 
 		if(fragId == R.id.main_main){
+			//use replace to replace the existing one
 			fragmentMain = new FragmentMain();
 			transaction.replace(R.id.fragment_container, fragmentMain);
 
@@ -52,6 +54,7 @@ public class MainActivity extends FragmentActivity {
 			fragmentAbout = new FragmentAbout();
 			transaction.replace(R.id.fragment_container, fragmentAbout);
 		}
+		//In case user click back
 		transaction.addToBackStack(null);
 		transaction.commit();	
 	}
